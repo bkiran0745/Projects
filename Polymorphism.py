@@ -12,3 +12,9 @@ class A():
 o = A()
 o.a('kiran ','busari')
 o.a('BITM ','Ballari ','583102')
+
+
+# ---------------------- Method Overriding  -----------------------
+
+# When we inherit from parent class and create child class then if the methods of parent class is overridden by child class then it's known as  
+# Inheritance is used to create new classes from existing ones. This allows us to reuse code and add functionality as needed.
