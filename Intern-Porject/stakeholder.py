@@ -1,8 +1,8 @@
 stakeholder_Dictionary={
-            'kiran':['kiran','KKS','100000.0','Cash','6949'],
-            'B kiran':['B kiran','BK','300000.0','Bonds','1234'],
-            'B Pavan':['B Pavan','BPK','700000.0','Land','4321'],
-            'Anas':['Anas','MAS','800000.0','Shares','0987'],
+            'kiran':['kiran','KKS','100000','Cash','6949'],
+            'B kiran':['B kiran','BK','300000','Bonds','1234'],
+            'B Pavan':['B Pavan','BPK','700000','Land','4321'],
+            'Anas':['Anas','MAS','800000','Shares','0987'],
         }
 def insert(lis,name):
     stakeholder_Dictionary[name]=lis
@@ -30,8 +30,8 @@ def Delete(user):
 def display_all():
     print("{:<10}{:<10}{:<10}{:<10}".format('NAME','Company ','Amount','Type'))
     for key,value in stakeholder_Dictionary.items():
-           NAME,Company_Name,Investement_Amount,Investement_Type,a5=value
-           print("{:<10}{:<10}{:<10}{:<10}".format(NAME,Company_Name,Investement_Amount,Investement_Type))
+        NAME,Company_Name,Investement_Amount,Investement_Type,a5=value
+        print("{:<10}{:<10}{:<10}{:<10}".format(NAME,Company_Name,Investement_Amount,Investement_Type))
 
 def Edit_details(user,index,edit_value):
     temp=[]
@@ -62,10 +62,9 @@ def suggestion(amount,type):
     k=0
     for key,value in stakeholder_Dictionary.items():
         at=value
-        if amount and type in at:
-            print("this is our suggestion:",at[0])
+        if amount in at and type in at:
+            print("\nour suggestion is ",at[0])
             k=1
     if k==0:
         print("Sorry we dont have your required")
         print("if we get the type u need we will suggest you")
-    

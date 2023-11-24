@@ -83,10 +83,10 @@ def log():
             print("\nThank you..!\n")
             break
         else:
-            print("\nchoose the write option..\n")
+            print("\nchoose the Right option..\n")
 def suggest_stackholder():
-    amount=input("\nHow much amount investment do u need: ")
-    type=input("\nwhich type of investment do u want:").lower()
+    amount=int(input("\nHow much amount investment do u need: "))
+    type=input("\nwhich type of investment do u want:")
     st.suggestion(amount,type)
 def client():
     while(True):
@@ -98,6 +98,8 @@ def client():
             if st.validet_username(user):
                 st.Display(user)
                 print("\nYou Have Collabrated with\n",user)
+            else:
+                print("Sorry we for inconvience we do not have your reqrement")
         elif choice1=="2":
             suggest_stackholder()
         else:
@@ -120,7 +122,7 @@ while(True):
         else:
             print("\nChoose the correct option.. \n")
     except ValueError as e:  
-        print("\nEnter Integer values only..\n")
+        print("\nEnter proper values only..\n")
 
 
 
