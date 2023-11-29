@@ -85,7 +85,7 @@ def log():
         else:
             print("\nchoose the Right option..\n")
 def suggest_stackholder():
-    amount=int(input("\nHow much amount investment do u need: "))
+    amount=input("\nHow much amount investment do u need: ")
     type=input("\nwhich type of investment do u want:")
     st.suggestion(amount,type)
 def client():
